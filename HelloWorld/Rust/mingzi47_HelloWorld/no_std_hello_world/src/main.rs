@@ -18,6 +18,7 @@ static HELLO: &[&[u8]] = &[
     b"\x1b[0m",
 ];
 
+// main
 #[unsafe(no_mangle)]
 pub extern "C" fn _start() -> ! {
     for line in HELLO {
@@ -31,21 +32,7 @@ pub extern "C" fn _start() -> ! {
     }
 
     // exit qemu
-    unsafe {
-        core::arch::asm!(
-            "sw {0}, 0({1})",
-            in(reg)EXIT_CODE, in(reg)EXIT_ADDR,
-        )
-    }
-
-    loop {
-        unsafe {
-            core::arch::asm!(
-                "wfi",
-                options(nomem, nostack)
-            );
-        }
-    }
+    exit!(EXIT_CODE);
 }
 
 use core::panic::PanicInfo;
@@ -53,12 +40,28 @@ use core::panic::PanicInfo;
 // no std, must impl 
 #[panic_handler]
 fn panic(_info: &PanicInfo) -> ! {
-    loop {
-        unsafe {
-            core::arch::asm!(
-                "wfi",
-                options(nomem, nostack)
-            );
+    exit!(EXIT_CODE);
+}
+
+#[macro_export]
+macro_rules! exit {
+    ($exit_code: expr) => {
+        {
+            unsafe {
+                core::arch::asm!(
+                    "sw {0}, 0({1})",
+                    in(reg)$exit_code, in(reg)EXIT_ADDR,
+                )
+            }
+
+            loop {
+                unsafe {
+                    core::arch::asm!(
+                        "wfi",
+                        options(nomem, nostack)
+                    );
+                }
+            }
         }
-    }
+    };
 }
