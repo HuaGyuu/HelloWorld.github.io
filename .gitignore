@@ -31,6 +31,7 @@ a.out
 # 临时文件
 tmp/
 *.tmp
+*__pycache__
 
 # 依赖管理工具相关文件
 node_modules/

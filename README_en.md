@@ -10,7 +10,7 @@
 
 **If you are a learner, please read this document carefully and refer to the official documentation of the programming language you are using.**
 
-**If you are a developer, please focus on the "Safety and Compliance" section of this document to quickly understand and follow the project's requirements and standards.**
+**If you are a developer, please focus on the "[Safety and Compliance](#Safety and Compliance)" section of this document to quickly understand and follow the project's requirements and standards.**
 
 
 
@@ -120,22 +120,19 @@ PROJECT_ROOT
    Hello World
    ```
 
-  ### C++ Version
+### C++ Version
 
 1. **Open the Solution**:
+   Use `Visual Studio 2022`, navigate to the `C++/[Participant Nickname]` directory, and open the `HelloWorld.sln` solution.
 
-   Use `Visual Studio 2022`, navigate to the `cpp/[Participant Nickname]` directory, and open the `HelloWorld.sln` solution.
-
-2. **Build and Run**:
-
-   Press `Ctrl + F5` to build and start the program.
+2. **Compile and Run**:
+   Use the shortcut key `Ctrl + F5` to compile and run the program.
 
 3. **View Output**:
-   
    After the program runs, the terminal will output:
 
    ```text
-Hello World!
+   Hello World
    ```
 
 ### Go Version
@@ -284,7 +281,7 @@ int main() {
 int main() {
 ```
 
-- The `main` function is the entry point of a C program. The program starts executing from here. It is the core interface between the operating system and the program.
+- The `main` function is the entry point of a C++ program. The program starts executing from here. It is the core interface between the operating system and the program.
 
 #### Go Example
 
@@ -377,16 +374,11 @@ printf("Hello, World!\n"); // Print "Hello, World!" with a newline
 
 #### C++ Example
 
-```cpp
-[] {
-        const auto print = [](auto&&... args) {
-            (std::cout << ... << args);
-            };
-        print("Hello", " ", "World!\n");
-        }();
+```c++
+std::cout << "Hello, World!\n"; // Print "Hello, World!" with a newline
 ```
 
-- Define and call a function using a lambda expression to print "Hello World!"
+- `std::cout`: Outputs text through the standard output stream and adds a newline character afterward, ensuring standardized output formatting.
 
 #### Go Example
 
@@ -485,8 +477,8 @@ print("World")
    - Follow the project's directory structure and naming conventions, placing files in the correct locations.
    - When creating new language directories, refer to existing structures to maintain project consistency and standardization.
 8. **Documentation**:
-   - For complex projects, provide clear code comments to explain key logic and complex algorithms, facilitating understanding and maintenance by other developers and learners.
-   - For complex projects, write README documents or other files to describe the code's functionality, usage, dependencies, and installation steps.
+   - For complex projects, provide clear code comments to explain key logic and complex algorithms, and ensure the project structure is as concise as possible to facilitate understanding and maintenance by other developers and learners.
+   - For complex projects, write specific README documents or other files in the corresponding project directories to describe the code's functionality, usage, dependencies, and installation steps.
 9. **Respect for Others' Contributions**:
    - Respect the contributions of other developers and do not maliciously modify, delete, or otherwise interfere with others' code.
    - If improvements to others' code are necessary, communicate with the original author in advance and obtain their consent. Maintain a friendly and professional attitude during collaboration.
