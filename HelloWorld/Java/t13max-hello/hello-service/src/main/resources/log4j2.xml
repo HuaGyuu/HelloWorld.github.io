@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <properties>
+        <property name="LOG_HOME">../../logs</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <File name="log" fileName="${LOG_HOME}/hello/hello.log" append="false">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <RollingFile name="RollingFileInfo" fileName="${LOG_HOME}/hello/info.log"
+                     filePattern="logs/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <filters>
+                <!--不包含-->
+                <ThresholdFilter level="warn" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <!--包含-->
+                <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </filters>
+        </RollingFile>
+        <RollingFile name="RollingFileError" fileName="${LOG_HOME}/hello/error.log"
+                     filePattern="logs/$${date:yyyy-MM}/error-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingFileInfo"/>
+            <appender-ref ref="RollingFileError"/>
+        </Root>
+    </Loggers>
+</Configuration>
