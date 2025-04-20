@@ -1,0 +1,17 @@
+#game
+
+#实例id
+instanceName: game-101
+
+#业务线程池配置
+action:
+  core: 1
+  max: 1
+  name: gameActionExecutor
+
+#测试
+test: true
+
+#数据库
+dbFile: /Users/antingbi/mc/SqlLiteDb/battle.db
+

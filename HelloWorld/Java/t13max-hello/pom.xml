@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.t13max.hello</groupId>
+    <artifactId>t13max-hello</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <name>t13max-hello</name>
+    <url>https://github.com/T13MAX</url>
+
+    <modules>
+        <module>hello-common</module>
+        <module>hello-service</module>
+        <module>hello-tool</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <hello.tool.version>0.0.1</hello.tool.version>
+        <hello.common.version>0.0.1</hello.common.version>
+
+        <junit.version>4.13.2</junit.version>
+        <log4j.version>2.17.2</log4j.version>
+        <lombok.version>1.18.30</lombok.version>
+        <fastjson.version>2.0.54</fastjson.version>
+        <netty.version>4.1.115.Final</netty.version>
+        <protobuf.version>4.28.2</protobuf.version>
+        <snakeyaml.version>2.2</snakeyaml.version>
+        <redission.version>3.15.6</redission.version>
+        <mybatis.version>3.5.13</mybatis.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+    </dependencies>
+</project>
