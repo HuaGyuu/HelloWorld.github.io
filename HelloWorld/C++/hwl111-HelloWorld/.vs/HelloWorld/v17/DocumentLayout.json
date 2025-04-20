@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\HelloWorld\\HelloWorld\\cpp\\hwl111-HelloWorld\\HelloWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA6EF97-30B7-41C7-AAFA-350CE749BF33}|HelloWorld\\HelloWorld.vcxproj|E:\\HelloWorld\\HelloWorld\\cpp\\hwl111-HelloWorld\\HelloWorld\\HelloWorld\\HelloWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7EA6EF97-30B7-41C7-AAFA-350CE749BF33}|HelloWorld\\HelloWorld.vcxproj|solutionrelative:HelloWorld\\HelloWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1a46fd64-28d5-434c-8eb3-17a02d419b53}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HelloWorld.cpp",
+              "DocumentMoniker": "E:\\HelloWorld\\HelloWorld\\cpp\\hwl111-HelloWorld\\HelloWorld\\HelloWorld\\HelloWorld.cpp",
+              "RelativeDocumentMoniker": "HelloWorld\\HelloWorld.cpp",
+              "ToolTip": "E:\\HelloWorld\\HelloWorld\\cpp\\hwl111-HelloWorld\\HelloWorld\\HelloWorld\\HelloWorld.cpp",
+              "RelativeToolTip": "HelloWorld\\HelloWorld.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-18T06:18:53.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

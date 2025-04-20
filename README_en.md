@@ -6,6 +6,14 @@
 
 **HelloWorld** is a historically significant multi-language project that represents a milestone in human-machine interaction. It is not only a technical achievement but also an important milestone in the history of programming languages. Through this code, we have achieved precise control over computer output, ushering in a new era of human-machine dialogue.
 
+
+
+**If you are a learner, please read this document carefully and refer to the official documentation of the programming language you are using.**
+
+**If you are a developer, please focus on the "[Safety and Compliance](#Safety and Compliance)" section of this document to quickly understand and follow the project's requirements and standards.**
+
+
+
 ## Features
 
 This project uses the core mechanisms of various programming languages to achieve precise control over output streams, producing the following output:
@@ -14,7 +22,7 @@ This project uses the core mechanisms of various programming languages to achiev
 Hello World
 ```
 
-This seemingly simple output reflects a deep understanding of the I/O stream mechanisms of various programming languages and efficient utilization of system resources.
+This simple output reflects a deep understanding of the I/O stream mechanisms of various programming languages and efficient utilization of system resources.
 
 ## Project Structure
 
@@ -22,31 +30,37 @@ The project includes the following files and directories:
 
 ```text
 PROJECT_ROOT
-├── HelloWorld                # Multi-language HelloWorld Project Directory
-│   ├── Batch                     # Batch Script Implementation Directory
+├── HelloWorld                			# Multi-language HelloWorld Project Directory
+│   ├── Batch                     		# Batch Script Implementation Directory
 │   │   └── [Participant Nickname]/HelloWorld.batch      # Project Participant's Batch Script Implementation
-│   ├── Brainfuck                     # Brainfuck Language Implementation Directory
+│   ├── Brainfuck                     	# Brainfuck Language Implementation Directory
 │   │   └── [Participant Nickname]/HelloWorld.bf      # Project Participant's Brainfuck Implementation
-│   ├── C                     # C Language Implementation Directory
+│   ├── C++                     			# C++ Language Implementation Directory
+│   │   └── [Participant Nickname]/HelloWorld.cpp      # Project Participant's C++ Language Implementation
+│   ├── C                     			# C Language Implementation Directory
 │   │   └── [Participant Nickname]/HelloWorld.c      # Project Participant's C Language Implementation
-│   ├── Go                    # Go Language Implementation Directory
+│   ├── Go                    			# Go Language Implementation Directory
 │   │   └── [Participant Nickname]/HelloWorld.go          # Project Participant's Go Language Implementation
-│   ├── Java                  # Java Language Implementation Directory
+│   ├── Java                  			# Java Language Implementation Directory
 │   │   └── [Participant Nickname]/HelloWorld*.java # Project Participant's Java Language Implementation
-│   ├── Js                    # JavaScript Language Implementation Directory
+│   ├── JavaScript                    		# JavaScript Language Implementation Directory
 │   │   └── [Participant Nickname]/HelloWorld*.js   # Project Participant's JavaScript Language Implementation
-│   ├── Rust                    # Rust Language Implementation Directory
+│   ├── PHP                    			# PHP Language Implementation Directory
+│   │   └── [Participant Nickname]/HelloWorld*.php   # Project Participant's PHP Language Implementation
+│   ├── Python                    			# Python Language Implementation Directory
+│   │   └── [Participant Nickname]/HelloWorld*.py   # Project Participant's Python Language Implementation
+│   ├── Rust                    		# Rust Language Implementation Directory
 │   │   └── [Participant Nickname]/HelloWorld*.rs   # Project Participant's Rust Language Implementation
-│   └── Wenyan                  # Wenyan Language Implementation Directory
+│   └── Wenyan                 			# Wenyan Language Implementation Directory
 │       └── [Participant Nickname]/天地，好在否！.wy  # Project Participant's Wenyan Language Implementation
-├── .gitignore                # Git Ignore File Configuration, Defining Files Not to Be Version Controlled
-├── README.md                 # Main Project Documentation (Chinese)
-└── README_en.md              # Project Documentation (English)
+├── .gitignore                			# Git Ignore File Configuration, Defining Files Not to Be Version Controlled
+├── README.md                 			# Main Project Documentation (Chinese)
+└── README_en.md              			# Project Documentation (English)
 ```
 
 ## Runtime Environment
 
-- **Programming Language Environment**: Ensure that the development environment for the corresponding language is installed (e.g., GCC, Go, JDK, Node.js, etc.).
+- **Programming Language Environment**: Ensure that the development environment for the corresponding language is installed (e.g., GCC, Go, JDK, Node.js, Python, etc.).
 - **Operating System**: Supports all mainstream operating systems (Windows, macOS, Linux).
 
 ## Running Instructions
@@ -106,6 +120,21 @@ PROJECT_ROOT
    Hello World
    ```
 
+### C++ Version
+
+1. **Open the Solution**:
+   Use `Visual Studio 2022`, navigate to the `C++/[Participant Nickname]` directory, and open the `HelloWorld.sln` solution.
+
+2. **Compile and Run**:
+   Use the shortcut key `Ctrl + F5` to compile and run the program.
+
+3. **View Output**:
+   After the program runs, the terminal will output:
+
+   ```text
+   Hello World
+   ```
+
 ### Go Version
 
 1. **Run the Program**:
@@ -148,10 +177,42 @@ PROJECT_ROOT
 ### JavaScript Version
 
 1. **Run the Program**:
-   Ensure that Node.js is installed, then open the terminal or command line, navigate to the `Js/[Participant Nickname]` directory, and run the following command:
+   Ensure that Node.js is installed, then open the terminal or command line, navigate to the `JavaScript/[Participant Nickname]` directory, and run the following command:
 
    ```bash
    node HelloWorld*.js
+   ```
+
+2. **View Output**:
+   After the program runs, the terminal will output:
+
+   ```text
+   Hello World
+   ```
+
+### PHP Version
+
+1. **Run the Program**:
+   Ensure that the PHP environment is installed, then open the terminal or command line, navigate to the `PHP/[Participant Nickname]` directory, and run the following command:
+
+   ```bash
+   php HelloWorld.php
+   ```
+
+2. **View Output**:
+   After the program runs, the terminal will output:
+
+   ```text
+   Hello World
+   ```
+
+### Python Version
+
+1. **Run the Program**:
+   Ensure that the Python environment is installed, then open the terminal or command line, navigate to the `Python/[Participant Nickname]` directory, and run the following command:
+
+   ```bash
+   python HelloWorld.py
    ```
 
 2. **View Output**:
@@ -214,6 +275,14 @@ int main() {
 
 - The `main` function is the entry point of a C program. The program starts executing from here. It is the core interface between the operating system and the program.
 
+#### C++ Example
+
+```cpp
+int main() {
+```
+
+- The `main` function is the entry point of a C++ program. The program starts executing from here. It is the core interface between the operating system and the program.
+
 #### Go Example
 
 ```go
@@ -255,6 +324,24 @@ echo Hello World
 
 - Brainfuck uses a series of instructions to control memory cells and output.
 
+#### PHP Example
+
+```php
+<?php
+?>
+```
+
+- In PHP, the code typically starts executing directly from the main program file without a defined main method.
+
+#### Python Example
+
+```python
+if __name__ == "__main__":
+    main()
+```
+
+- The `main` function is the entry point of the program. It usually uses `if __name__ == "__main__":` to define the main program entry.
+
 #### Wenyan Example
 
 ```Wenyan
@@ -263,7 +350,7 @@ echo Hello World
 是謂「問天地好在」之術也。
 ```
 
-- `是術曰` is the entry point of a Wenyan program. The program starts executing from here. It is the core identifier recognized by the Wenyan compiler.
+- `是術曰` is the entry point of a Wenyan program. It is the core identifier recognized by the Wenyan compiler.
 
 ### Output Statements
 
@@ -284,6 +371,14 @@ printf("Hello, World!\n"); // Print "Hello, World!" with a newline
 ```
 
 - `printf`: Outputs text through the standard output stream, where `\n` represents a newline character, reflecting precise control over the output stream.
+
+#### C++ Example
+
+```c++
+std::cout << "Hello, World!\n"; // Print "Hello, World!" with a newline
+```
+
+- `std::cout`: Outputs text through the standard output stream and adds a newline character afterward, ensuring standardized output formatting.
 
 #### Go Example
 
@@ -325,6 +420,23 @@ echo Hello World
 
 - Brainfuck controls memory cells and character output to achieve text output.
 
+#### PHP Example
+
+```php
+echo "Hello, World!"; // Output text without a newline
+```
+
+- `echo`: Outputs text through the standard output stream without automatically adding a newline character, reflecting precise control over the output stream.
+
+#### Python Example
+
+```python
+print("Hello ", end="") # Output text without a newline
+print("World")
+```
+
+- The `print` function uses the `end` parameter to control the end behavior of the output. By default, it adds a newline. Setting `end=""` allows for non-newline output, reflecting precise control over the output stream.
+
 #### Wenyan Example
 
 ```Wenyan
@@ -347,18 +459,31 @@ echo Hello World
 - **The Beginning of Human-Machine Dialogue**: This code marks the beginning of human-machine dialogue, laying the foundation for the development of more complex systems.
 - **The Cornerstone of Programming Languages**: It is the first code that every programmer learns, symbolizing the courage and wisdom of humanity in exploring the unknown.
 
-## Safety and Compliance Requirements
+## Safety and Compliance
 
-1. **Code Originality**: Participants must ensure that the submitted code is original and does not infringe on any third-party intellectual property rights. Copying or plagiarizing others' code is prohibited.
+1. **Originality**: Participants must ensure that the submitted code does not infringe on any third-party intellectual property rights. Copying or plagiarizing others' code is prohibited.
 2. **Legality**: Participants must ensure that the submitted code complies with relevant laws and regulations. It must not contain any illegal, harmful, infringing, or morally questionable content. Code with malicious content, backdoors, or other elements that may endanger system security and privacy is strictly forbidden.
-3. **Security**: Participants must ensure that the code adheres to basic secure coding principles to avoid introducing obvious vulnerabilities (such as buffer overflows, SQL injection, cross-site scripting attacks, etc.). Security testing of the code is recommended if possible.
-4. **Code Quality**: The code should be readable and maintainable. Follow the coding standards and style guidelines of the respective programming language. Use clear naming conventions, appropriate comments, and a logical code structure. Avoid writing overly complex, obscure, or hard-to-understand code.
+3. **Security**:
+   - Participants must ensure that the code adheres to basic secure coding principles to avoid introducing obvious vulnerabilities (such as buffer overflows, SQL injection, cross-site scripting attacks, etc.).
+   - Security testing of the code is recommended to ensure it does not introduce risks when running in different environments.
+4. **Code Quality**:
+   - Participants must ensure that the submitted code is readable and maintainable, following the coding standards and style guidelines of the respective programming language.
+   - Use clear naming conventions, appropriate comments, and a logical code structure. Avoid writing overly complex, obscure, or hard-to-understand code.
 5. **Protection of Sensitive Information**: Participants must ensure that the submitted code does not contain any sensitive information, such as personal privacy data, account passwords, API keys, etc. Ensure that the code does not disclose any confidential or sensitive content in a public environment.
-6. **Compatibility**: Ensure that the code is compatible with different operating systems, development environments, and mainstream browsers (if applicable). Avoid code that fails to run properly due to environmental differences.
-7. **Adherence to Project Standards**: Participants must follow the project's directory structure and naming conventions, placing files in the correct locations. When creating new language directories, refer to existing structures.
-8. **Respect for Others' Contributions**: Respect the contributions of other developers. Do not maliciously modify or delete others' code. If improvements to others' code are needed, communicate with the original author first and obtain their consent.
+6. **Compatibility**:
+   - Ensure that the code is compatible with different operating systems, development environments, and mainstream browsers (if applicable).
+   - Avoid using special functions or dependencies specific to certain environments. If necessary, provide alternative solutions or clearly indicate the applicable environment.
+7. **Adherence to Project Standards**:
+   - Follow the project's directory structure and naming conventions, placing files in the correct locations.
+   - When creating new language directories, refer to existing structures to maintain project consistency and standardization.
+8. **Documentation**:
+   - For complex projects, provide clear code comments to explain key logic and complex algorithms, and ensure the project structure is as concise as possible to facilitate understanding and maintenance by other developers and learners.
+   - For complex projects, write specific README documents or other files in the corresponding project directories to describe the code's functionality, usage, dependencies, and installation steps.
+9. **Respect for Others' Contributions**:
+   - Respect the contributions of other developers and do not maliciously modify, delete, or otherwise interfere with others' code.
+   - If improvements to others' code are necessary, communicate with the original author in advance and obtain their consent. Maintain a friendly and professional attitude during collaboration.
 
-By adhering to these safety and compliance requirements, we can jointly maintain a healthy, secure, and orderly open-source development environment, promoting the sustainable development and exchange of knowledge within the project.
+By adhering to these safety and compliance requirements, we can jointly maintain a healthy, secure, and well-organized open-source development environment, promoting the sustainable development of the project and fostering knowledge exchange and learning.
 
 ## Acknowledgments
 

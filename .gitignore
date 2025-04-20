@@ -8,3 +8,38 @@ target/
 
 ### VS Code ###
 .vscode/
+.vs
+
+# 操作系统相关文件
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# 编译生成文件
+*.class
+target/
+*.o
+a.out
+
+# IDE 编辑器相关文件
+*.project
+.settings/
+
+# 日志文件
+*.log
+
+# 临时文件
+tmp/
+*.tmp
+*__pycache__
+
+# 依赖管理工具相关文件
+node_modules/
+.venv/
+
+# 数据库文件
+*.sqlite
+
+# 证书文件和加密密钥
+*.crt
+*.key
