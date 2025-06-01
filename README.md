@@ -135,6 +135,22 @@ PROJECT_ROOT
    Hello World
    ```
 
+### Elixir 版本
+
+1. **运行程序**：
+   打开终端或命令行，导航到 `Elixir/[参与者昵称]` 目录，直接运行以下命令：
+
+   ```bash
+   elixir ./hello.ex
+   ```
+
+2. **查看输出**：
+   程序运行后，终端将输出：
+
+   ```text
+   Hello World!
+   ```
+
 ### Go 版本
 
 1. **运行程序**：
@@ -184,6 +200,29 @@ PROJECT_ROOT
    ```
 
 2. **查看输出**：
+   程序运行后，终端将输出：
+
+   ```text
+   Hello World
+   ```
+
+### Kotlin 版本
+
+1. **编译代码**：
+   打开终端或命令行，导航到 `kotlin/[参与者昵称]` 目录，运行以下命令编译代码：
+
+   ```bash
+   kotlinc HelloWorld.kt -include-runtime -d HelloWorld.jar
+   ```
+
+2. **运行程序**：
+   编译成功后，运行以下命令启动程序：
+
+   ```bash
+   java -jar HelloWorldKt
+   ```
+
+3. **查看输出**：
    程序运行后，终端将输出：
 
    ```text

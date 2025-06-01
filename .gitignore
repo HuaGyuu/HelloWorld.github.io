@@ -20,6 +20,8 @@ Desktop.ini
 target/
 *.o
 a.out
+*.jar
+*.war
 
 # IDE 编辑器相关文件
 *.project
