@@ -219,7 +219,7 @@ PROJECT_ROOT
    编译成功后，运行以下命令启动程序：
 
    ```bash
-   java -jar HelloWorldKt
+   java -jar HelloWorld
    ```
 
 3. **查看输出**：
