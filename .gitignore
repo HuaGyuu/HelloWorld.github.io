@@ -23,6 +23,10 @@ a.out
 *.jar
 *.war
 
+# for F#
+**bin
+**obj
+
 # IDE 编辑器相关文件
 *.project
 .settings/

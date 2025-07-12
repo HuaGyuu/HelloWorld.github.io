@@ -151,6 +151,21 @@ PROJECT_ROOT
    Hello World!
    ```
 
+### F# 版本
+
+1. **运行程序**
+   打开终端，导航到`F#/[参与者昵称]`目录，直接运行以下命令
+   ```bash
+   dotnet run
+   ```
+
+2. **查看程序输出**
+   程序运行后将会输出：
+
+   ```text
+   Hello World
+   ```
+
 ### Go 版本
 
 1. **运行程序**：
@@ -219,7 +234,7 @@ PROJECT_ROOT
    编译成功后，运行以下命令启动程序：
 
    ```bash
-   java -jar HelloWorldKt
+   java -jar HelloWorld
    ```
 
 3. **查看输出**：
